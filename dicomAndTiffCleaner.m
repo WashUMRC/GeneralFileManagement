@@ -1,7 +1,7 @@
 function dicomAndTiffCleaner()
 
 %Do VivaCT
-f = ftp('10.21.24.203','microct','mousebone4');
+f = ftp('10.21.24.203','microct','mousebone4','System','OpenVMS');
 cDir = cd(f,'dk0:[MICROCT.DATA]');
 
 %Delete DICOM and TIF in measurement dirs first
@@ -46,7 +46,7 @@ end
 % % while tt == 1
     
     %now do MicroCT
-    f = ftp('10.21.24.204','microct','mousebone4');
+    f = ftp('10.21.24.204','microct','mousebone4','System','OpenVMS');
     cDir = cd(f,'dk0:[MICROCT.DATA]');
     
     %Delete DICOM and TIF in measurement dirs first
