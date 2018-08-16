@@ -1,5 +1,9 @@
 function UpdateDependencies()
 
+userProfile = getenv('USERPROFILE');
+
+cd(fullfile(userProfile,[\documents\matlab']);
+
 repos = {'https://github.com/WashUMRC/ImagingLogging',...
     'https://github.com/WashUMRC/ThreePointBendingAnalisys',...
     'https://github.com/WashUMRC/DiskTowerBackup',...
